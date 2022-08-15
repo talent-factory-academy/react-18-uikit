@@ -1,0 +1,82 @@
+{
+  "dashboard-simple": [
+    {
+      "type": "mapquest-static",
+      "data": {
+        "API_KEY": "Go3ZWai1i4nd2o7kBuAUs4y7pnpjXdZn",
+        "city": "Trieste",
+        "width": 400
+      }
+    },
+    {
+      "type": "buttons",
+      "data": {
+        "gap": true,
+        "items": [
+          {
+            "label": "Google",
+            "url": "http://www.google.com",
+            "style": {
+              "color": "white",
+              "backgroundColor": "red"
+            }
+
+          },
+          {
+            "label": "Microsoft",
+            "url": "http://www.microsoft.com",
+            "style": {
+              "color": "white",
+              "backgroundColor": "purple"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "dashboard": [
+    {
+      "type": "image",
+      "data": {
+        "title": "Image title",
+        "image": "..."
+      }
+    },
+    {
+      "type": "hero",
+      "data": {
+        "title": "...",
+        "subtitle": "...",
+        "image": "..."
+      }
+    },
+    {
+      "type": "leaflet",
+      "data": {
+        "coords": [43, 13]
+      }
+    },
+    {
+      "type": "separator",
+      "data": {
+        "text": "This is a separator",
+        "color": "#fff000"
+      }
+    },
+    {
+      "type": "buttons",
+      "data": [
+        {
+          "label": "Google",
+          "url": "http://www.google.com",
+          "color": "red"
+        },
+        {
+          "label": "Microsoft",
+          "url": "http://www.microsoft.com",
+          "color": "red"
+        }
+      ]
+    }
+  ]
+}
