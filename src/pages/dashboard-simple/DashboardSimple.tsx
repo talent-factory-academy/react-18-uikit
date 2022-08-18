@@ -1,13 +1,7 @@
 import axios from 'axios';
 import React, { FunctionComponent, FunctionComponentElement, useEffect, useState } from 'react';
 import { Widget } from '../../model/widget';
-import Buttons from '../../shared/widgets/buttons/Buttons';
-import MapQuestStatic from '../../shared/widgets/mapquest/MapQuestStatic';
-
-const COMPONENTS: { [key: string]: FunctionComponent<any> } = {
-  'mapquest-static': MapQuestStatic,
-  buttons: Buttons
-}
+import { COMPONENTS } from '../../shared/widgets';
 
 
 const DashboardSimple = () => {

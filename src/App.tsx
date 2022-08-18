@@ -1,19 +1,22 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import { BrowserRouter, Link, Navigate, Route, Routes } from 'react-router-dom';
-import DashboardLazy from './pages/dashboard-simple/DashboardLazy';
-import DashboardSimple from './pages/dashboard-simple/DashboardSimple';
-import { ButtonsDemo } from './pages/uikit/pages/ButtonsDemo';
-import { ChartJSDemo } from './pages/uikit/pages/ChartJSDemo';
-import { LandingDemo } from './pages/uikit/pages/LandingDemo';
-import { LayoutDemo } from './pages/uikit/pages/LayoutDemo';
-import { LeafletDemo } from './pages/uikit/pages/LeafletDemo';
-import { MapQuestStaticDemo } from './pages/uikit/pages/MapQuestStaticDemo';
-import { PanelDemo } from './pages/uikit/pages/PanelDemo';
-import { SeparatorsDemo } from './pages/uikit/pages/SeparatorsDemo';
-import { TabbarDemo } from './pages/uikit/pages/TabbarDemo';
-import { UikitPage } from './pages/uikit/UikitPage';
+import { Spinner } from './shared/utils/Spinner';
+
 import Button from './shared/widgets/buttons/Button';
 import { ButtonGroup } from './shared/widgets/buttons/ButtonGroup';
+
+const DashboardSimple = lazy(() => import( './pages/dashboard-simple/DashboardSimple'));
+const DashboardLazy = lazy(() => import( './pages/dashboard-simple/DashboardLazy'));
+const ButtonsDemo = lazy(() => import( './pages/uikit/pages/ButtonsDemo'));
+const ChartJSDemo = lazy(() => import( './pages/uikit/pages/ChartJSDemo'));
+const LandingDemo = lazy(() => import( './pages/uikit/pages/LandingDemo'));
+const LayoutDemo = lazy(() => import( './pages/uikit/pages/LayoutDemo'));
+const LeafletDemo = lazy(() => import( './pages/uikit/pages/LeafletDemo'));
+const MapQuestStaticDemo = lazy(() => import( './pages/uikit/pages/MapQuestStaticDemo'));
+const PanelsDemo = lazy(() => import( './pages/uikit/pages/PanelDemo'));
+const SeparatorsDemo = lazy(() => import( './pages/uikit/pages/SeparatorsDemo'));
+const TabbarDemo = lazy(() => import( './pages/uikit/pages/TabbarDemo'));
+const UikitPage = lazy(() => import( './pages/uikit/UikitPage'));
 
 function App() {
   return (
@@ -33,11 +36,24 @@ function App() {
 
       <div className="max-w-screen-md mx-auto">
         <Routes>
-          <Route path="dashboard-simple" element={<DashboardSimple />} />
-          <Route path="dashboard-lazy" element={<DashboardLazy />} />
-          <Route path="uikit" element={<UikitPage />}>
+          <Route path="dashboard-simple" element={
+            <React.Suspense fallback={<Spinner />}>
+              <DashboardSimple />
+            </React.Suspense>
+          } />
+          <Route path="dashboard-lazy" element={
+            <React.Suspense fallback={<Spinner />}>
+              <DashboardLazy />
+            </React.Suspense>
+            }
+          />
+          <Route path="uikit" element={
+            <React.Suspense fallback={<Spinner />}>
+              <UikitPage />
+            </React.Suspense>
+          }>
             <Route path="mapquest-static" element={<MapQuestStaticDemo /> } />
-            <Route path="panel" element={<PanelDemo /> } />
+            <Route path="panel" element={<PanelsDemo /> } />
             <Route path="buttons" element={<ButtonsDemo /> } />
             <Route path="leaflet" element={<LeafletDemo /> } />
             <Route path="separator" element={<SeparatorsDemo /> } />

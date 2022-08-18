@@ -1,13 +1,11 @@
 import { useState } from 'react';
 import Button from '../../../shared/widgets/buttons/Button';
 import { ButtonGroup } from '../../../shared/widgets/buttons/ButtonGroup';
-import { ChartJS } from '../../../shared/widgets/chartjs/ChartJS';
+import ChartJS from '../../../shared/widgets/chartjs/ChartJS';
 import { Col } from '../../../shared/widgets/layout/Col';
 import { Fx } from '../../../shared/widgets/layout/Fx';
-import { Leaflet } from '../../../shared/widgets/leaflet/Leaflet';
-import { LeafletTestable } from '../../../shared/widgets/leaflet/LeafletTestable';
 
-export const ChartJSDemo = () => {
+ const ChartJSDemo = () => {
   const [skills, setSkills] = useState({
     labels: ['angular', 'react', 'js', 'svelte', 'solid'],
     data: [90, 80, 100, 50, 80]
@@ -55,3 +53,5 @@ export const ChartJSDemo = () => {
 
   </div>
 };
+
+export default ChartJSDemo;

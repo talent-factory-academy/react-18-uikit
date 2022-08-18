@@ -9,7 +9,7 @@ interface ChartJSProps {
   labels: string[];
 }
 
-export function ChartJS(props: ChartJSProps) {
+function ChartJS(props: ChartJSProps) {
   const host = useRef<HTMLCanvasElement>(null);
   const myChart = useRef<Chart | null>(null);
   const { data, title, labels, chartType = 'line'  } = props;
@@ -85,3 +85,5 @@ export const config: ChartConfiguration = {
     }
   },
 };
+
+export default ChartJS;

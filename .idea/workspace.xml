@@ -20,7 +20,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/fabiobiondi/Documents/training/academy/react/module3_1_projects/src/pages/uikit/pages",
+    "last_opened_file_path": "/Users/fabiobiondi/Documents/training/academy/react/module3_1_projects/src/shared/utils",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -30,11 +30,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/shared/utils" />
       <recent name="$PROJECT_DIR$/src/pages/uikit/pages" />
       <recent name="$PROJECT_DIR$/src/shared/widgets/layout" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/shared/widgets" />
-      <recent name="$PROJECT_DIR$/src/pages/uikit" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/shared/widgets/layout" />
@@ -52,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660486884503</updated>
-      <workItem from="1660486886740" duration="43304000" />
+      <workItem from="1660486886740" duration="48491000" />
     </task>
     <servers />
   </component>

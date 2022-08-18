@@ -11,7 +11,7 @@ interface NewsProps {
   items: News[]
 }
 
-export const NewsSection = (props: NewsProps) => {
+const NewsSection = (props: NewsProps) => {
   return (
       <div className="my-5">
         <div className="text-5xl mb-5">{props.title}</div>
@@ -35,3 +35,5 @@ export const NewsSection = (props: NewsProps) => {
       </div>
     )
 };
+
+export default NewsSection;

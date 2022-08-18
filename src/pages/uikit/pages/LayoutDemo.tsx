@@ -1,8 +1,8 @@
 import { Col } from '../../../shared/widgets/layout/Col';
 import { Fx } from "../../../shared/widgets/layout/Fx";
-import { Separator } from '../../../shared/widgets/layout/Separator';
+import Separator from '../../../shared/widgets/layout/Separator';
 
-export const LayoutDemo = () => {
+ const LayoutDemo = () => {
   return <div>
 
     <h1>LayoutDemo</h1>
@@ -55,3 +55,6 @@ export const LayoutDemo = () => {
 
   </div>
 };
+
+
+export default LayoutDemo;

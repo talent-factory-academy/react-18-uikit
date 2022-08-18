@@ -2,9 +2,9 @@ import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import Button from '../../shared/widgets/buttons/Button';
 import { ButtonGroup } from '../../shared/widgets/buttons/ButtonGroup';
-import { Separator } from '../../shared/widgets/layout/Separator';
+import Separator from '../../shared/widgets/layout/Separator';
 
-export const UikitPage = () => {
+ const UikitPage = () => {
   return <div>
     <h1>UiKit</h1>
     <ButtonGroup>
@@ -45,3 +45,5 @@ export const UikitPage = () => {
     <Outlet />
   </div>
 };
+
+export default UikitPage;

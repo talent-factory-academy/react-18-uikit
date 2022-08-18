@@ -13,7 +13,7 @@ const socials: MySocial[] = [
   { id: 13, name: 'Twitch', link: 'twitch'},
 ]
 
-export const TabbarDemo = () => {
+ const TabbarDemo = () => {
   const [selectedSocial, setSelectedSocial] = useState<MySocial>(socials[0])
 
   function selectHandler(item: MySocial, selectedIndex: number) {
@@ -40,3 +40,5 @@ export const TabbarDemo = () => {
     </div>
   )
 };
+
+export default TabbarDemo;

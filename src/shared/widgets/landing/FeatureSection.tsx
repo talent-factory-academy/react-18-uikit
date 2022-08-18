@@ -4,7 +4,7 @@ interface FeatureProps {
   description: string;
 }
 
-export const FeatureSection = (props: FeatureProps) => {
+const FeatureSection = (props: FeatureProps) => {
   return <div>
     <div className="flex justify-between gap-4 items-center">
       <div className="w-3/5">
@@ -21,3 +21,5 @@ export const FeatureSection = (props: FeatureProps) => {
     </div>
   </div>
 };
+
+export default FeatureSection;

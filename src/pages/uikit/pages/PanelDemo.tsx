@@ -2,7 +2,7 @@ import Button from '../../../shared/widgets/buttons/Button';
 import { Panel } from '../../../shared/widgets/panels/Panel';
 import { Toggable } from '../../../shared/widgets/panels/Togglable';
 
-export const PanelDemo = () => {
+const PanelsDemo = () => {
   return <div>
 
     <h1>Panel and Toggable</h1>
@@ -24,3 +24,5 @@ export const PanelDemo = () => {
 
   </div>
 };
+
+export default PanelsDemo;

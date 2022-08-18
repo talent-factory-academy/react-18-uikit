@@ -4,7 +4,7 @@ import { ButtonGroup } from '../../../shared/widgets/buttons/ButtonGroup';
 import { Leaflet } from '../../../shared/widgets/leaflet/Leaflet';
 import { LeafletTestable } from '../../../shared/widgets/leaflet/LeafletTestable';
 
-export const LeafletDemo = () => {
+ const LeafletDemo = () => {
   const [coords, setCoords] = useState<[number, number]>([42, 12]);
   const [zoom, setZoom] = useState<number>(7);
   const [text, setText] = useState<string>('You are here!');
@@ -26,3 +26,5 @@ export const LeafletDemo = () => {
 
   </div>
 };
+
+export default LeafletDemo;

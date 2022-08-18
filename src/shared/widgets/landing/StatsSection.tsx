@@ -8,18 +8,20 @@ interface StatsProps {
   items: Stat[]
 }
 
-export const StatsSection = (props: StatsProps) => {
+const StatsSection = (props: StatsProps) => {
   return (
     <div className="bg-gradient-to-r from-sky-800 to-sky-500 p-5 my-5 rounded-xl text-white">
       <div className="text-5xl text-center mb-5">{props.title}</div>
       <div className="flex justify-around text-center">
         {
-          props.items.map((item, i) => <SingleStats key={i} {...item} />)
+          props.items?.map((item, i) => <SingleStats key={i} {...item} />)
         }
       </div>
     </div>
   )
 };
+
+export default StatsSection;
 
 const SingleStats = (props: Stat) => {
   return (

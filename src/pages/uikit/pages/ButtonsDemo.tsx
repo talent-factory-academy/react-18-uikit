@@ -1,9 +1,9 @@
 import Button from '../../../shared/widgets/buttons/Button';
 import { ButtonGroup } from '../../../shared/widgets/buttons/ButtonGroup';
 import Buttons from '../../../shared/widgets/buttons/Buttons';
-import { Separator } from '../../../shared/widgets/layout/Separator';
+import Separator from '../../../shared/widgets/layout/Separator';
 
-export const ButtonsDemo = () => {
+ const ButtonsDemo = () => {
   return <>
     <h2>Single Buttons</h2>
 
@@ -55,3 +55,5 @@ export const ButtonsDemo = () => {
     ]} />
   </>
 };
+
+export default ButtonsDemo;

@@ -1,16 +1,9 @@
 import axios from 'axios';
-import React, { FunctionComponent, FunctionComponentElement, lazy, Suspense, useEffect, useState } from 'react';
+import React, { FunctionComponentElement, Suspense, useEffect, useState } from 'react';
 import { Widget } from '../../model/widget';
-/*import Buttons from '../../shared/widgets/Buttons';
-import MapQuestStatic from '../../shared/widgets/MapQuestStatic';*/
+import { Spinner } from '../../shared/utils/Spinner';
+import { COMPONENTS } from '../../shared/widgets';
 
-const Buttons = lazy(() => import('../../shared/widgets/buttons/Buttons'));
-const MapQuestStatic = lazy(() => import('../../shared/widgets/mapquest/MapQuestStatic'));
-
-const COMPONENTS: { [key: string]: FunctionComponent<any> } = {
-  'mapquest-static': MapQuestStatic,
-  buttons: Buttons
-}
 
 const DashboardSimple = () => {
   const [widgets, setWidgets] = useState<Widget[]>([]);
@@ -22,6 +15,10 @@ const DashboardSimple = () => {
 
   return <div className="mx-auto max-w-screen-lg">
     <h1>Dashboard Lazy</h1>
+    <p>This differs from Dashboard-Simple because each component is lazy loaded and has its own spinner</p>
+    <br/>
+    <pre>You can enabled 3G Fast or Slow Throttling from Chrome Dev Tools to try it</pre>
+    <br/>
 
     {
       widgets.map((widget, index) => {
@@ -29,7 +26,7 @@ const DashboardSimple = () => {
           React.createElement(COMPONENTS[widget.type], { ...widget.data })
 
         return <div key={index}>
-          <Suspense fallback={<p>Loading...</p>}>
+          <Suspense fallback={<Spinner />}>
            {component}
           </Suspense>
         </div>

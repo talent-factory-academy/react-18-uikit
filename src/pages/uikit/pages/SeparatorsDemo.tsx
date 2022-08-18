@@ -1,6 +1,6 @@
-import { Separator } from '../../../shared/widgets/layout/Separator';
+import Separator from '../../../shared/widgets/layout/Separator';
 
-export const SeparatorsDemo = () => {
+ const SeparatorsDemo = () => {
   return <div>
 
     <h1>Separators</h1>
@@ -12,3 +12,5 @@ export const SeparatorsDemo = () => {
     <Separator type="dashed" padding={3} height={3} color="purple" />
   </div>
 };
+
+export default SeparatorsDemo;

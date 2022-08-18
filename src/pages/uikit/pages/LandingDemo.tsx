@@ -1,9 +1,8 @@
-import { ChartJS } from '../../../shared/widgets/chartjs/ChartJS';
-import { FeatureSection } from '../../../shared/widgets/landing/FeatureSection';
-import { HeroSection } from '../../../shared/widgets/landing/HeroSection';
-import { News, NewsSection } from '../../../shared/widgets/landing/NewsSection';
-import { StatsSection } from '../../../shared/widgets/landing/StatsSection';
-import { Separator } from '../../../shared/widgets/layout/Separator';
+import FeatureSection from '../../../shared/widgets/landing/FeatureSection';
+import HeroSection from '../../../shared/widgets/landing/HeroSection';
+import NewsSection, { News } from '../../../shared/widgets/landing/NewsSection';
+import StatsSection from '../../../shared/widgets/landing/StatsSection';
+import Separator from '../../../shared/widgets/layout/Separator';
 import { Leaflet } from '../../../shared/widgets/leaflet/Leaflet';
 
 
@@ -25,7 +24,7 @@ const news: News[] = [
   },
 ];
 
-export const LandingDemo = () => {
+ const LandingDemo = () => {
   return <div>
 
     <HeroSection
@@ -62,3 +61,5 @@ export const LandingDemo = () => {
 
   </div>
 };
+
+export default LandingDemo;
