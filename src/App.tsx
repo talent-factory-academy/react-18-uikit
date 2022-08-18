@@ -3,6 +3,7 @@ import { BrowserRouter, Link, Navigate, Route, Routes } from 'react-router-dom';
 import DashboardLazy from './pages/dashboard-simple/DashboardLazy';
 import DashboardSimple from './pages/dashboard-simple/DashboardSimple';
 import { ButtonsDemo } from './pages/uikit/pages/ButtonsDemo';
+import { ChartJSDemo } from './pages/uikit/pages/ChartJSDemo';
 import { LandingDemo } from './pages/uikit/pages/LandingDemo';
 import { LayoutDemo } from './pages/uikit/pages/LayoutDemo';
 import { LeafletDemo } from './pages/uikit/pages/LeafletDemo';
@@ -43,6 +44,7 @@ function App() {
             <Route path="tabbar" element={<TabbarDemo /> } />
             <Route path="layout" element={<LayoutDemo /> } />
             <Route path="landing" element={<LandingDemo /> } />
+            <Route path="chartjs" element={<ChartJSDemo /> } />
             <Route index element={<Navigate to="mapquest-static" /> } />
           </Route>
 

@@ -24,6 +24,7 @@ export const StatsSection = (props: StatsProps) => {
 const SingleStats = (props: Stat) => {
   return (
     <div>
+
       <div className="text-4xl">{props.value}</div>
       <div>{props.label}</div>
     </div>

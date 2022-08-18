@@ -1,3 +1,4 @@
+import { ChartJS } from '../../../shared/widgets/chartjs/ChartJS';
 import { FeatureSection } from '../../../shared/widgets/landing/FeatureSection';
 import { HeroSection } from '../../../shared/widgets/landing/HeroSection';
 import { News, NewsSection } from '../../../shared/widgets/landing/NewsSection';
@@ -26,6 +27,7 @@ const news: News[] = [
 
 export const LandingDemo = () => {
   return <div>
+
     <HeroSection
       title="Hero Component"
       description="Subtitle with lorem text"

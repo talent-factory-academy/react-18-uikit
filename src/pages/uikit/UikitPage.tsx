@@ -29,9 +29,14 @@ export const UikitPage = () => {
       <Link to="layout">
         <Button>Layout</Button>
       </Link>
-      <Link to="landing">
-        <Button>Landing</Button>
+      <Link to="chartjs">
+        <Button>ChartJS</Button>
       </Link>
+      <Link to="landing">
+        <Button>Landing Component</Button>
+      </Link>
+
+
 
     </ButtonGroup>
 
