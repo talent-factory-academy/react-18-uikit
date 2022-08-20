@@ -22,14 +22,14 @@ function App() {
   return (
     <BrowserRouter>
       <ButtonGroup inline={false} style={{backgroundColor: 'darkslategray'}}>
+        <Link to="uikit">
+          <Button>UI Kit</Button>
+        </Link>
         <Link to="dashboard-simple">
           <Button>Dashboard simple</Button>
         </Link>
         <Link to="dashboard-lazy">
           <Button>Dashboard Lazy</Button>
-        </Link>
-        <Link to="uikit">
-          <Button>UI Kit</Button>
         </Link>
       </ButtonGroup>
 

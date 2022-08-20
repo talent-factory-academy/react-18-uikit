@@ -19,7 +19,7 @@ export function useLeaflet(
 
   // init
   useEffect(() => {
-    if (host.current) {
+    if (host.current && !map.current) {
       map.current = L.map(host.current).setView([1, 1], 5);
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
