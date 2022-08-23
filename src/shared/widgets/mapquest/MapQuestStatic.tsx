@@ -17,7 +17,10 @@ const MapQuestStatic = (props: MapQuestStaticProps & React.ImgHTMLAttributes<HTM
   } = props;
 
   const url = `${process.env.REACT_APP_MAPQUEST_API}?key=${props.API_KEY}&center=${props.city}&size=600,400`;
-  return <img src={url}   alt={city} width={width} height={height} {...rest}   />
+  return <div>
+    <small>{city}</small>
+    <img src={url}   alt={city} width={width} height={height} {...rest}   />
+  </div>
 };
 
 export default MapQuestStatic;

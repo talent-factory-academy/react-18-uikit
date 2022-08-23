@@ -10,7 +10,7 @@ export function TabBar<T extends { id: number, name: string}>(props: TabBarProps
   const { items, selectedItem, onTabClick} = props;
   return (
     <>
-      <div data-testid="list" className="flex gap-x-3">
+      <ul data-testid="list"  className="flex gap-x-3">
         {
           items.map((item, index) => {
             return <div
@@ -24,7 +24,7 @@ export function TabBar<T extends { id: number, name: string}>(props: TabBarProps
             }
           )
         }
-      </div>
+      </ul>
     </>
   )
 }
