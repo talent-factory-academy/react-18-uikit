@@ -42,7 +42,6 @@ import Separator from '../../../shared/widgets/layout/Separator';
           color: "white",
           backgroundColor: "red"
         }
-
       },
       {
         label: "Microsoft",

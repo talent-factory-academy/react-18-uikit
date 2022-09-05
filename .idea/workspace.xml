@@ -15,26 +15,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/fabiobiondi/Documents/training/corsi-react/react-18-uikit/src/shared/widgets/leaflet/hooks&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/fabiobiondi/Documents/training/corsi-react/react-18-uikit/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/fabiobiondi/Documents/training/corsi-react/react-18-uikit/src/shared/widgets/buttons",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/fabiobiondi/Documents/training/corsi-react/react-18-uikit/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/shared/widgets/buttons" />
       <recent name="$PROJECT_DIR$/src/shared/widgets/leaflet/hooks" />
       <recent name="$PROJECT_DIR$/src/shared/utils" />
       <recent name="$PROJECT_DIR$/src/pages/uikit/pages" />
       <recent name="$PROJECT_DIR$/src/shared/widgets/layout" />
-      <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/shared/widgets/layout" />
@@ -58,7 +58,7 @@
       <workItem from="1661254964891" duration="16331000" />
       <workItem from="1661623405949" duration="646000" />
       <workItem from="1661639445690" duration="653000" />
-      <workItem from="1662400081879" duration="1181000" />
+      <workItem from="1662400081879" duration="7568000" />
     </task>
     <servers />
   </component>
