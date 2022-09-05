@@ -1,13 +1,15 @@
-import {  renderHook } from '@testing-library/react';
-import React  from 'react';
+import { act, render, renderHook, screen } from '@testing-library/react';
+import { wait } from '@testing-library/user-event/dist/utils';
+import React, { useRef } from 'react';
 import { useLeaflet } from './useLeaflet';
-// jest.mock('leaflet');
+// jest.mock('leaflet')
+
 
 test('render Leaflet', () => {
-  const hostRef: any = {
-    current: null,
-  }
 
+  const hostRef: any = {
+    current:  jest.fn()
+  }
   const mapRef: any = {
     current:  {
       setView: jest.fn(),
@@ -22,19 +24,21 @@ test('render Leaflet', () => {
     }
   }
 
-  const spySetZoom = jest.spyOn(mapRef.current, 'setZoom')
-  const spySetView = jest.spyOn(mapRef.current, 'setView')
-  const spySetLagLng = jest.spyOn(markerRef.current, 'setLatLng')
-  const spyBindPopup = jest.spyOn(markerRef.current, 'bindPopup')
+  jest.spyOn(mapRef.current, 'setZoom')
+  jest.spyOn(mapRef.current, 'setView')
+  jest.spyOn(markerRef.current, 'setLatLng')
 
   renderHook(() => useLeaflet(hostRef, mapRef, markerRef, [42, 12], 5, 'hello'))
 
-  expect(spySetZoom).toHaveBeenCalledWith(5);
-  expect(spySetView).toHaveBeenCalledWith([42, 12]);
-  expect(spySetLagLng).toHaveBeenCalledWith([42, 12]);
-  expect(spyBindPopup).toHaveBeenCalledWith('hello');
+  expect(mapRef.current.setZoom).toHaveBeenCalledWith(5);
+  expect(mapRef.current.setView).toHaveBeenCalledWith([42, 12]);
+  expect(markerRef.current.setLatLng).toHaveBeenCalledWith([42, 12]);
+  expect(markerRef.current.bindPopup).toHaveBeenCalledWith('hello');
+
 
   renderHook(() => useLeaflet(hostRef, mapRef, markerRef, [42, 12], 6, 'hello'))
   expect(mapRef.current.setView).toHaveBeenCalledWith([42, 12]);
   expect(mapRef.current.setZoom).toHaveBeenCalledWith(6);
+
+
 })

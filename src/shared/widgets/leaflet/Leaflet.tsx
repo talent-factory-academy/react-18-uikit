@@ -37,8 +37,11 @@ export const Leaflet = (props: LeafletProps) => {
   useEffect(() => {
     map.current?.setView(props.coords);
     marker.current?.setLatLng(props.coords);
+  }, [props.coords]);
+
+  useEffect(() => {
     marker.current?.bindPopup(props.popupText)
-  }, [props.coords, props.popupText]);
+  }, [props.popupText]);
 
   useEffect(() => {
     if (map.current) {

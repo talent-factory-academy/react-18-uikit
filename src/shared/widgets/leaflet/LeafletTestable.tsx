@@ -14,6 +14,6 @@ export const LeafletTestable = (props: LeafletTestableProps) => {
   const marker = useRef<L.Marker | null>(null)
 
   useLeaflet(host, map, marker, coords, zoom, popupText)
-
+  console.log(host)
   return <div ref={host} style={{ width: '100%', height: 300}} />
 };
