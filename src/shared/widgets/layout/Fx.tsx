@@ -19,6 +19,7 @@ export const Fx = (props: PropsWithChildren<FxProps>) => {
         justify,
         valign
       )}
+    data-testid="fx"
     style={{ gap }}
   >
     {props.children}

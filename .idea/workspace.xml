@@ -20,7 +20,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/fabiobiondi/Documents/training/corsi-react/react-18-uikit/src/shared/widgets/buttons",
+    "last_opened_file_path": "/Users/fabiobiondi/Documents/training/corsi-react/react-18-uikit/src/shared/widgets/layout",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -30,11 +30,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/shared/widgets/layout" />
       <recent name="$PROJECT_DIR$/src/shared/widgets/buttons" />
       <recent name="$PROJECT_DIR$/src/shared/widgets/leaflet/hooks" />
       <recent name="$PROJECT_DIR$/src/shared/utils" />
       <recent name="$PROJECT_DIR$/src/pages/uikit/pages" />
-      <recent name="$PROJECT_DIR$/src/shared/widgets/layout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/shared/widgets/layout" />
@@ -58,7 +58,7 @@
       <workItem from="1661254964891" duration="16331000" />
       <workItem from="1661623405949" duration="646000" />
       <workItem from="1661639445690" duration="653000" />
-      <workItem from="1662400081879" duration="7568000" />
+      <workItem from="1662400081879" duration="11270000" />
     </task>
     <servers />
   </component>
