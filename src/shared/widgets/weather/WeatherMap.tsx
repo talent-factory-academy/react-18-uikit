@@ -7,6 +7,9 @@ interface WeatherProps {
   city: string;
 }
 
+export const iconURL = `http://openweathermap.org/img/w`
+export const iconExt = 'png'
+
 export default function Weather (props: WeatherProps) {
   const [meteo, setMeteo] = useState<Meteo | null>(null);
 
@@ -23,7 +26,7 @@ export default function Weather (props: WeatherProps) {
         <span className="bg-slate-200 rounded-lg inline-block p-3">
           <div>{props.city}</div>
           <div className="text-lg">{ meteo?.main.temp}°</div>
-          <img src={`http://openweathermap.org/img/w/${meteo.weather[0].icon}.png`} alt=""/>
+          <img alt="weather icon" src={`${iconURL}/${meteo.weather[0].icon}.${iconExt}`} />
         </span> :
       <Spinner/>
     }
