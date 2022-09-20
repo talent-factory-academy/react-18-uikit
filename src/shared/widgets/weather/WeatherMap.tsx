@@ -21,7 +21,7 @@ export default function Weather (props: WeatherProps) {
     {
       meteo ?
         <span className="bg-slate-200 rounded-lg inline-block p-3">
-          <div>City {props.city}</div>
+          <div>{props.city}</div>
           <div className="text-lg">{ meteo?.main.temp}°</div>
           <img src={`http://openweathermap.org/img/w/${meteo.weather[0].icon}.png`} alt=""/>
         </span> :
