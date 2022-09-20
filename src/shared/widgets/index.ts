@@ -8,6 +8,7 @@ const Separator = lazy(() => import('./layout/Separator'));
 const HeroSection = lazy(() => import('../../shared/widgets/landing/HeroSection'));
 const Buttons = lazy(() => import('../../shared/widgets/buttons/Buttons'));
 const MapQuestStatic = lazy(() => import('../../shared/widgets/mapquest/MapQuestStatic'));
+const WeatherMap = lazy(() => import('../../shared/widgets/weather/WeatherMap'));
 
 export  const COMPONENTS: { [key: string]: FunctionComponent<any> } = {
   hero: HeroSection,
@@ -17,5 +18,6 @@ export  const COMPONENTS: { [key: string]: FunctionComponent<any> } = {
   separator: Separator,
   'mapquest-static': MapQuestStatic,
   buttons: Buttons,
-  chartjs: ChartJS
+  chartjs: ChartJS,
+  weather: WeatherMap
 }

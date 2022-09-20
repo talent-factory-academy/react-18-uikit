@@ -20,7 +20,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/fabiobiondi/Documents/training/corsi-react/react-18-uikit/src/shared/widgets/layout",
+    "last_opened_file_path": "/Users/fabiobiondi/Documents/training/corsi-react/react-18-uikit/src/pages/uikit/pages",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -30,18 +30,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/uikit/pages" />
       <recent name="$PROJECT_DIR$/src/shared/widgets/layout" />
       <recent name="$PROJECT_DIR$/src/shared/widgets/buttons" />
       <recent name="$PROJECT_DIR$/src/shared/widgets/leaflet/hooks" />
       <recent name="$PROJECT_DIR$/src/shared/utils" />
-      <recent name="$PROJECT_DIR$/src/pages/uikit/pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/shared/widgets/weather/model" />
       <recent name="$PROJECT_DIR$/src/shared/widgets/layout" />
       <recent name="$PROJECT_DIR$/src/shared/widgets/tabbar" />
       <recent name="$PROJECT_DIR$/src/shared/widgets/panels" />
       <recent name="$PROJECT_DIR$/src/shared/widgets/mapquest" />
-      <recent name="$PROJECT_DIR$/src/shared/widgets/leaflet" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -58,7 +58,9 @@
       <workItem from="1661254964891" duration="16331000" />
       <workItem from="1661623405949" duration="646000" />
       <workItem from="1661639445690" duration="653000" />
-      <workItem from="1662400081879" duration="11270000" />
+      <workItem from="1662400081879" duration="11957000" />
+      <workItem from="1662886743043" duration="2398000" />
+      <workItem from="1663704779235" duration="2891000" />
     </task>
     <servers />
   </component>

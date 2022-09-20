@@ -35,6 +35,9 @@ import Separator from '../../shared/widgets/layout/Separator';
       <Link to="landing">
         <Button>Landing Component</Button>
       </Link>
+      <Link to="misc">
+        <Button>Misc</Button>
+      </Link>
 
 
 

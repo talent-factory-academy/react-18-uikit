@@ -16,6 +16,7 @@ const MapQuestStaticDemo = lazy(() => import( './pages/uikit/pages/MapQuestStati
 const PanelsDemo = lazy(() => import( './pages/uikit/pages/PanelDemo'));
 const SeparatorsDemo = lazy(() => import( './pages/uikit/pages/SeparatorsDemo'));
 const TabbarDemo = lazy(() => import( './pages/uikit/pages/TabbarDemo'));
+const MiscDemo = lazy(() => import( './pages/uikit/pages/MiscDemo'));
 const UikitPage = lazy(() => import( './pages/uikit/UikitPage'));
 
 function App() {
@@ -61,6 +62,7 @@ function App() {
             <Route path="layout" element={<LayoutDemo /> } />
             <Route path="landing" element={<LandingDemo /> } />
             <Route path="chartjs" element={<ChartJSDemo /> } />
+            <Route path="misc" element={<MiscDemo /> } />
             <Route index element={<Navigate to="mapquest-static" /> } />
           </Route>
 
