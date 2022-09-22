@@ -1,5 +1,5 @@
-import React, { lazy } from 'react';
-import { BrowserRouter, Link, Navigate, Route, Routes } from 'react-router-dom';
+import React, { CSSProperties, lazy } from 'react';
+import { BrowserRouter, Link, Navigate, NavLink, Route, Routes } from 'react-router-dom';
 import { Spinner } from './shared/utils/Spinner';
 
 import Button from './shared/widgets/buttons/Button';
@@ -19,19 +19,21 @@ const TabbarDemo = lazy(() => import( './pages/uikit/pages/TabbarDemo'));
 const MiscDemo = lazy(() => import( './pages/uikit/pages/MiscDemo'));
 const UikitPage = lazy(() => import( './pages/uikit/UikitPage'));
 
+const isActive = (obj: { isActive: boolean} ) => obj.isActive ? { fontWeight: 'bold'} : {}
+
 function App() {
   return (
     <BrowserRouter>
       <ButtonGroup inline={false} style={{backgroundColor: 'darkslategray'}}>
-        <Link to="uikit">
+        <NavLink to="uikit"  style={isActive}>
           <Button>UI Kit</Button>
-        </Link>
-        <Link to="dashboard-simple">
+        </NavLink>
+        <NavLink to="dashboard-simple" style={isActive}>
           <Button>Dashboard simple</Button>
-        </Link>
-        <Link to="dashboard-lazy">
+        </NavLink>
+        <NavLink to="dashboard-lazy"  style={isActive}>
           <Button>Dashboard Lazy</Button>
-        </Link>
+        </NavLink>
       </ButtonGroup>
 
 
@@ -67,7 +69,7 @@ function App() {
           </Route>
 
           <Route index element={
-            <Navigate to="dashboard-simple" />
+            <Navigate to="uikit" />
           } />
         </Routes>
       </div>
