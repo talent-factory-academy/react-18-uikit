@@ -20,7 +20,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/fabiobiondi/Documents/training/corsi-react/react-18-uikit/src/shared/widgets/hello-mocks",
+    "last_opened_file_path": "/Users/fabiobiondi/Documents/training/corsi-react/react-18-uikit/src/shared/widgets/hello",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -30,8 +30,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/shared/widgets/hello-mocks" />
       <recent name="$PROJECT_DIR$/src/shared/widgets/hello" />
+      <recent name="$PROJECT_DIR$/src/shared/widgets/hello-mocks" />
       <recent name="$PROJECT_DIR$/src/shared/utils" />
       <recent name="$PROJECT_DIR$/src/pages/uikit/pages" />
       <recent name="$PROJECT_DIR$/src/shared/widgets/layout" />
@@ -62,7 +62,7 @@
       <workItem from="1662886743043" duration="2398000" />
       <workItem from="1663704779235" duration="5701000" />
       <workItem from="1663788703681" duration="5768000" />
-      <workItem from="1663873972503" duration="10095000" />
+      <workItem from="1663873972503" duration="12909000" />
     </task>
     <servers />
   </component>
