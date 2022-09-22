@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React from 'react';
-import { render, screen, waitFor, within } from '@testing-library/react';
-import HelloXhr from './HelloXhr';
+import { render, screen, waitFor } from '@testing-library/react';
+import HelloMockAxios from './HelloMockAxios';
 
 // inspired: https://www.csrhymes.com/2022/03/09/mocking-axios-with-jest-and-typescript.html
 jest.mock('axios');
@@ -25,7 +25,7 @@ beforeEach(() => {
 
 
 test('render text', async () => {
-  render(<HelloXhr />);
+  render(<HelloMockAxios />);
 
   await waitFor(() => {
     const userList = screen.getAllByRole('listitem');

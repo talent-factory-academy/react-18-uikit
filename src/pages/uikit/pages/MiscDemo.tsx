@@ -2,7 +2,8 @@ import React, { lazy, Suspense, useState } from 'react';
 import { Spinner } from '../../../shared/utils/Spinner';
 import Button from '../../../shared/widgets/buttons/Button';
 import { ButtonGroup } from '../../../shared/widgets/buttons/ButtonGroup';
-import HelloXhr from '../../../shared/widgets/hello/HelloXhr';
+import HelloMockAxios from '../../../shared/widgets/hello-mocks/HelloMockAxios';
+import HelloMockModules from '../../../shared/widgets/hello-mocks/HelloMockModules';
 import Weather from '../../../shared/widgets/weather/WeatherMap';
 const Hello = lazy(() => import('../../../shared/widgets/hello/Hello'));
 
@@ -20,9 +21,13 @@ const Hello = lazy(() => import('../../../shared/widgets/hello/Hello'));
       </Suspense>
 
 
-      <h2>Hello Xhr</h2>
-      <HelloXhr />
+      <h2>Hello Mock Axios</h2>
+      <HelloMockAxios />
       <hr/>
+
+      <h2>Hello Mock Module</h2>
+      <HelloMockModules />
+
 
       <h2>Weather Component</h2>
       <Weather city={city} />

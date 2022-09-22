@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
-export default function HelloXhr() {
+export default function HelloMockAxios() {
   const [users, setUsers] = useState<any[]>([])
   useEffect(() => {
     axios.get('https://jsonplaceholder.typicode.com/users')
