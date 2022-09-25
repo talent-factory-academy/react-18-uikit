@@ -9,7 +9,8 @@ export default function HelloMockAxios() {
   }, [])
   return <div>
     {
-      users.map(u => <li role="listitem" key={u.id}>{u.name}</li>)
+      // default <li> role is role="listitem"
+      users.map(u => <li  key={u.id}>{u.name}</li>)
     }
   </div>
 }

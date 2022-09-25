@@ -19,16 +19,16 @@ export default function HelloMockModules() {
     <div>Language: { config?.language }</div>
 
     <hr/>
-    <div>
+    <div data-testid="users-list">
       {
-        users.map(u => <li role="user-item" key={u.id}>{u.name}</li>)
+        users.map(u => <li key={u.id}>{u.name}</li>)
       }
     </div>
     <hr/>
 
-    <div>
+    <div data-testid="posts-list">
       {
-        posts.map(u => <li role="post-item" key={u.id}>{u.title}</li>)
+        posts.map(u => <li key={u.id}>{u.title}</li>)
       }
     </div>
   </div>

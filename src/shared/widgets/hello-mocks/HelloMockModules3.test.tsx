@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen, waitFor, within } from '@testing-library/react';
 import HelloMockModules from './HelloMockModules';
 
 jest.mock('./utils')
@@ -22,8 +22,9 @@ test('render users loaded by Axios 3', async () => {
   render(<HelloMockModules />);
 
   await waitFor(() => {
-    const userList = screen.getAllByRole('user-item');
-    expect(userList).toHaveLength(2);
+    const list = screen.getByTestId('users-list');
+    const items = within(list).getAllByRole('listitem');
+    expect(items).toHaveLength(2);
   })
 
 });
@@ -33,8 +34,9 @@ test('render posts fetched by fetch 3', async () => {
   render(<HelloMockModules />);
 
   await waitFor(() => {
-    const postList = screen.getAllByRole('post-item');
-    expect(postList).toHaveLength(2);
+    const list = screen.getByTestId('posts-list');
+    const items = within(list).getAllByRole('listitem');
+    expect(items).toHaveLength(2);
   })
 
 });

@@ -7,7 +7,8 @@ export default function HelloList() {
 
   return <div data-testid="list">
     {
-      users.map(u => <li role="list-item" key={u}>{u}</li>)
+      // default role: role="listitem"
+      users.map(u => <li key={u}>{u}</li>)
     }
   </div>
 }

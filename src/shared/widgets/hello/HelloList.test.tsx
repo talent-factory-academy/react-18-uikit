@@ -5,7 +5,7 @@ import HelloList, { initialState } from './HelloList';
 test('display 3 items', async () => {
   render(<HelloList />);
   // OK
-  const userList = screen.getAllByRole('list-item');
+  const userList = screen.getAllByRole('listitem');
   expect(userList).toHaveLength(3);
 });
 
