@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { CSSProperties, PropsWithChildren } from 'react';
 
 export interface ButtonGroupProps {
-  direction?: 'row' | 'col' | 'center';
+  direction?: 'row' | 'col' ;
   inline?: boolean;
   border?: boolean;
   style?: CSSProperties;
@@ -13,7 +13,7 @@ export const ButtonGroup = (props: PropsWithChildren<ButtonGroupProps>) => {
   return  <span
     style={{ ...style }}
     className={clsx(
-      `flex items-center p-2    gap-2`,
+      `flex items-center p-2 gap-2`,
       { 'border-2 rounded': border },
       { 'inline-flex': inline },
       { 'flex-row': direction === 'row' },

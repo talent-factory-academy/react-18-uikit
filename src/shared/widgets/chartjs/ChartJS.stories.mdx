@@ -1,0 +1,26 @@
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import ChartJS from './ChartJS';
+
+<Meta title="Widgets/ChartJS" component={ChartJS} />
+
+# ChartJS
+
+With `MDX`, we can define a story for `Checkbox` right in the middle of our Markdown documentation.
+
+<Canvas>
+  <Story name="basic usage">
+    <ChartJS
+      data={ [90, 80, 100, 50, 80]}
+      labels={['angular', 'react', 'js', 'svelte', 'solid']}
+    />
+  </Story>
+  <Story name="radar">
+    <ChartJS
+      chartType="radar"
+      data={ [90, 80, 100, 50, 80]}
+      labels={['angular', 'react', 'js', 'svelte', 'solid']}
+    />
+  </Story>
+</Canvas>

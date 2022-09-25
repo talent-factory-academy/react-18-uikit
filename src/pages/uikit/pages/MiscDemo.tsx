@@ -15,6 +15,12 @@ const Hello = lazy(() => import('../../../shared/widgets/hello/Hello'));
     <div>
       <h1>Misc Demo</h1>
 
+      <h2>Spinner</h2>
+      <Spinner />
+      <Spinner color="primary"/>
+      <Spinner color="secondary"/>
+      <Spinner color="alert"/>
+
       <h2>Hello World Component</h2>
       <Suspense fallback={<Spinner />}>
         <Hello />

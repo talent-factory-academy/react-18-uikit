@@ -1,0 +1,35 @@
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import Buttons from './Buttons';
+
+<Meta title="Widgets/Buttons" component={Buttons} />
+
+# Checkbox
+
+With `MDX`, we can define a story for `Checkbox` right in the middle of our Markdown documentation.
+
+<Canvas>
+  <Story name="basic usage">
+    <Buttons
+       items={[
+         {
+           label: "Google",
+           url: "http://www.google.com",
+           style: {
+             color: "white",
+             backgroundColor: "red"
+           }
+         },
+         {
+           label: "Microsoft",
+           url: "http://www.microsoft.com",
+           style: {
+             color: "white",
+             backgroundColor: "white"
+           }
+         }
+       ]}
+    />
+  </Story>
+</Canvas>
