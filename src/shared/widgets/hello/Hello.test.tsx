@@ -3,7 +3,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import Hello from './Hello';
 
-test.only('change name3', async () => {
+test.only('change name', async () => {
   // ARRANGE
    render(<Hello />);
   // ACT
