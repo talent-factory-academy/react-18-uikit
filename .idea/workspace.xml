@@ -15,27 +15,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/fabiobiondi/Documents/training/corsi-react/react-18-uikit/src/shared/widgets/chartjs&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/fabiobiondi/Documents/training/corsi-react/react-18-uikit/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/fabiobiondi/Documents/training/corsi-react/react-18-uikit/src/shared/widgets/panels",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Users/fabiobiondi/Documents/training/corsi-react/react-18-uikit/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/shared/widgets/panels" />
       <recent name="$PROJECT_DIR$/src/shared/widgets/chartjs" />
       <recent name="$PROJECT_DIR$/src/shared/widgets/buttons" />
       <recent name="$PROJECT_DIR$/src/stories" />
       <recent name="$PROJECT_DIR$/src/shared/widgets/hello" />
-      <recent name="$PROJECT_DIR$/src/shared/widgets/hello-mocks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/shared/widgets/hello-mocks" />
@@ -67,7 +67,7 @@
       <workItem from="1665419242308" duration="1184000" />
       <workItem from="1665420783118" duration="115000" />
       <workItem from="1665420908978" duration="1600000" />
-      <workItem from="1665438999749" duration="4546000" />
+      <workItem from="1665438999749" duration="6154000" />
     </task>
     <servers />
   </component>
