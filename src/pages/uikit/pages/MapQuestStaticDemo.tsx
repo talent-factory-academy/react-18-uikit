@@ -1,5 +1,7 @@
 import MapQuestStatic from '../../../shared/widgets/mapquest/MapQuestStatic';
 
+// NOTE the API KEY is expired so you need to create a new one
+// https://developer.mapquest.com/documentation/
  const MapQuestStaticDemo = () => {
   return <div>
     <h1>Map Quest</h1>
