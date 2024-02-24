@@ -1,4 +1,4 @@
-import React, { CSSProperties, lazy } from 'react';
+import React, { lazy } from 'react';
 import { BrowserRouter, Link, Navigate, NavLink, Route, Routes } from 'react-router-dom';
 import { Spinner } from './shared/utils/Spinner';
 
